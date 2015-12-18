@@ -27,12 +27,12 @@ function GameManager.LuaScriptPanel()
 end
 
 function GameManager.Awake()
-    --warn('Awake--->>>');
+    --logWarn('Awake--->>>');
 end
 
 --启动事件--
 function GameManager.Start()
-	--warn('Start--->>>');
+	--logWarn('Start--->>>');
 end
 
 --初始化完成，发送链接服务器信息--
@@ -49,23 +49,23 @@ function GameManager.OnInitOK()
     this.test_sproto_func();
     coroutine.start(this.test_coroutine);
 
-    warn('SimpleFramework InitOK--->>>');
+    logWarn('SimpleFramework InitOK--->>>');
 end
 
 --测试协同--
 function GameManager.test_coroutine()    
-    warn("1111");
+    logWarn("1111");
     coroutine.wait(1);	
-    warn("2222");
+    logWarn("2222");
 	
     local www = WWW("http://bbs.ulua.org/readme.txt");
     coroutine.www(www);
-    warn(www.text);    	
+    logWarn(www.text);    	
 end
 
 --测试sproto--
 function GameManager.test_sproto_func()
-    warn("test_sproto_func-------->>");
+    logWarn("test_sproto_func-------->>");
     local sp = sproto.parse [[
     .Person {
         name 0 : string
@@ -121,7 +121,7 @@ end
 
 --测试lpeg--
 function GameManager.test_lpeg_func()
-	warn("test_lpeg_func-------->>");
+	logWarn("test_lpeg_func-------->>");
 	-- matches a word followed by end-of-string
 	local p = lpeg.R"az"^1 * -1
 
@@ -208,5 +208,5 @@ end
 
 --销毁--
 function GameManager.OnDestroy()
-	--warn('OnDestroy--->>>');
+	--logWarn('OnDestroy--->>>');
 end
