@@ -11,6 +11,11 @@
 游戏案例地址 http://www.ulua.org/showcase.html
 框架详细介绍 http://bbs.ulua.org/default.asp?cateID=4
 
+//-------------2016-01-09-------------
+(1)优化安卓底层库armv7-a添加-mfloat-abi=softfp使用FPU硬件来做浮点运算。
+(2)iOS底层库Optimization Level从-Os修改成-O3，提高优化等级。
+(3)iOS底层库Dead Code Stripping改为NO，提高稳定性。
+
 //-------------2015-12-30-------------
 (1)去掉了uLua的Linux平台底层库。
 (2)重新编译底层库，异常信息文件路径从60扩展到256字符长度。
