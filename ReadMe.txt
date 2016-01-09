@@ -15,6 +15,8 @@
 (1)优化安卓底层库armv7-a添加-mfloat-abi=softfp使用FPU硬件来做浮点运算。
 (2)iOS底层库Optimization Level从-Os修改成-O3，提高优化等级。
 (3)iOS底层库Dead Code Stripping改为NO，提高稳定性。
+(4)将 UnityEngine.EventSystems 添加到 usingList;
+(5)判断有无`符号的程序集分隔符, 避免一些本程序集的报错
 
 //-------------2015-12-30-------------
 (1)去掉了uLua的Linux平台底层库。
