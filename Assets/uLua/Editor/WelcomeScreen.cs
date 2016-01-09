@@ -21,7 +21,7 @@
     public class WelcomeScreen : EditorWindow
     {
         private bool flag = true;
-        private string version = "Version : 1.24";
+        private string version = "Version : 1.25";
         private Rect mContactDescriptionRect = new Rect(70f, 344f, 250f, 30f);
         private Rect mContactHeaderRect = new Rect(70f, 324f, 250f, 20f);
         private Texture mContactImage;
