@@ -1,7 +1,7 @@
 ﻿本项目已经不再更新维护，由tolua #代替
 tolua #地址：https://github.com/topameng/tolua
 
-有问题请加：ulua技术交流1群 341746602(已满)、请加2群：469941220
+有问题请加群：（2群）469941220 （3群）434341400
 
 支持平台：PC/MAC/Android(armv7-a + Intel x86)/iOS(armv7 + arm64)/
 	  WP8(SimpleFramework_WP_v0.1.1 (nlua))/
