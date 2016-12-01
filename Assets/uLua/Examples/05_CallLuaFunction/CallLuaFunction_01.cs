@@ -21,7 +21,7 @@ public class CallLuaFunction_01 : MonoBehaviour {
         // Get the function object
         LuaFunction f = l.GetFunction("luaFunc");
 
-        // Call it, takes a variable number of object parameters and attempts to interpet them appropriately
+        // Call it, takes a variable number of object parameters and attempts to interprete them appropriately
         object[] r = f.Call("I called a lua function!");
 
         // Lua functions can have variable returns, so we again store those as a C# object array, and in this case print the first one
